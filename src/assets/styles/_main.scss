@@ -1,0 +1,140 @@
+@import "includes";
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 140px;
+
+  @include laptop-small{
+    flex-direction: column;
+    height: 1300px;
+    align-items: flex-start;
+
+  }
+
+  @include tablet{
+    height: 1300px;
+  }
+
+  @include mobile-large{
+    height: auto;
+    padding-bottom: 50vw;
+  }
+
+  // .main__description
+  &__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    padding-left: 40px;
+    gap: 42px;
+    align-items: flex-start;
+
+    @include mobile-large{
+      padding: 0 10px;
+    }
+  }
+
+  // .main__title
+  &__title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    max-width: 310px;
+    color: #FFFFFF;
+    margin-top: 223px;
+
+    @include laptop-middle{
+      margin-top: 40px;
+    }
+
+    @include mobile-large{
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 130%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      max-width: 240px;
+    }
+  }
+
+  // .main__subtitle
+  &__subtitle {
+    font-family: 'Arial', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+
+
+    @include laptop-middle-l{
+      max-width: 350px;
+      width: 100%;
+    }
+
+    @include tablet{
+      max-width: 460px;
+      width: 100%;
+
+    }
+
+    @include mobile-large{
+      text-align: center;
+    }
+  }
+}
+
+.main__image{
+  position: absolute;
+  background: url("@/images/start-screen-puppy.png") no-repeat;
+  width: 58%;
+  height: 728px;
+  left: inherit;
+  right: 0;
+  bottom: 0px;
+
+  @include laptop-middle-l{
+    height: 517px;
+    width: 50%;
+    left: 485px;
+  }
+
+  @include laptop-small{
+    left: inherit;
+    width: 100%;
+    margin-top: 94px;
+    right: 0;
+  }
+
+  @include tablet{
+    height: 90vw;
+  }
+
+  @include mobile-large{
+    background-size: 100vw 100vw;
+    padding-top: 50px;
+  }
+}
+
+Button{
+  margin-bottom: 243px;
+
+  @include tablet{
+    align-self: center;
+  }
+}
+
+.wrapper{
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+
+}

@@ -1,0 +1,99 @@
+@import "includes";
+
+.shelter {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+
+  @include laptop-small{
+    flex-wrap: wrap;
+  }
+  // .shelter__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
+
+    @include mobile-large{
+      width: 50%;
+    }
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  @include mobile-large{
+    font-size: 25px;
+  }
+
+}
+
+.container {
+  max-width: 1026px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.img {
+}
+
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.first__layer{
+  display: flex;
+  gap: 120px;
+  @include laptop-small{
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
+.second__layer{
+  display: flex;
+  gap: 120px;
+  padding-top: 55px;
+  padding-bottom: 100px;
+  @include laptop-small{
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
+.card__wrapper{
+  display: flex;
+  gap: 120px;
+  flex-wrap: wrap;
+  max-width: 1026px;
+  margin: 0 auto;
+  justify-content: center;
+
+  @include mobile-large{
+    gap: 60px 0;
+  }
+
+}

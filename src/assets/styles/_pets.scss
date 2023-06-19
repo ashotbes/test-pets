@@ -1,0 +1,83 @@
+@import "includes";
+
+.pets {
+  background: #F6F6F6;
+  height: 800px;
+  // .pets__title
+  &__title {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+
+    @include mobile-large{
+      font-size: 25px;
+    }
+  }
+}
+
+.pet__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 110px;
+}
+
+.pet {
+  // .pet__card
+  &__card {
+  }
+}
+
+.pets {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @include laptop-middle{
+    //max-width: 900px;
+  }
+
+}
+
+.filled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.swiper-wrapper {
+  display: flex;
+  padding: 0 89px;
+  position: relative;
+
+  @include mobile-large{
+    padding: 0 35px;
+  }
+
+  @include mobile-small{
+    height: 100%;
+  }
+}
+

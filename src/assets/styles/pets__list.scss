@@ -1,0 +1,65 @@
+.pets__list{
+  background-color: #F6F6F6;
+}
+
+.container__pets-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-flow: wrap;
+  gap: 40px;
+}
+
+.buttons{
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.left__arrow_btn{
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #CDCDCD;
+  border: 2px solid #CDCDCD;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+}
+
+.first{
+  background: #F1CDB3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  border: none;
+}
+
+.right__arrow_btn{
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #292929;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+}
+
+Button {
+  cursor: pointer;
+}

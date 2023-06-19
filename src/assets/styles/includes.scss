@@ -1,0 +1,257 @@
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+
+.filled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 45px;
+  gap: 10px;
+  //width: 207px;
+  height: 52px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+
+
+  &:hover {
+    background: #FDDCC4;
+  }
+}
+
+.unfilled {
+  display: flex;
+  align-items: center;
+  padding: 15px 45px;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 3px solid #F1CDB3;
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  justify-content: center;
+
+  &:hover {
+    background: #FDDCC4;
+    border: none;
+  }
+
+
+}
+
+
+.card {
+  background: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 515px;
+  border-radius: 9px;
+  font-size: 20px;
+  line-height: 23px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  gap: 30px;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.paragraph_s {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 23px 19px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  height: 52px;
+  width: 52px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+
+  @include mobile-large{
+    margin-bottom: 25px;
+  }
+
+  &__left {
+    left: 0px;
+    top: 50%;
+
+    @include mobile-large {
+      top: 77%;
+      left: 30%;
+      margin-top: 20px;
+    }
+  }
+
+  &__right {
+    right: 0;
+    top: 50%;
+
+    @include mobile-large {
+      top: 77%;
+      right: 30%;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+li::marker {
+  color: #F1CDB3;
+}
+
+.modal {
+  background: #FAFAFA;
+  border-radius: 9px;
+  max-width: 900px;
+  display: flex;
+
+  // .modal__img
+  &__img {
+    margin-right: 30px;
+  }
+
+  // .modal__info
+  &__info {
+    max-height: 362px;
+    max-width: 351px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile-large{
+      padding: 0;
+    }
+  }
+}
+
+
+.pet {
+  // .pet__name
+  &__name {
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 50px;
+
+    @include mobile-large{
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+  }
+
+  // .pet__type
+  &__type {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 40px;
+
+    @include mobile-large{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .pet__description
+  &__description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+    @include mobile-large{
+      display: flex;
+      justify-content: center;
+      padding: 0 10px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 110%;
+      text-align: justify;
+      letter-spacing: 0.06em;
+      color: #000000;
+
+    }
+  }
+
+  // .pet__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+}
+
+
+.close {
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: -36px;
+  top: -50px;
+}
+
+.modal__content {
+  display: flex;
+  gap: 20px;
+  max-width: 730px;
+
+  @include mobile-large{
+    img {
+      display: none;
+    }
+    ul {
+      padding-left: 18px;
+      padding-bottom: 15px;
+    }
+
+    max-width: 240px;
+
+  }
+}

@@ -1,0 +1,69 @@
+@import "includes";
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  padding: 80px 215px 100px 215px;
+
+  @include laptop-small {
+    flex-direction: column-reverse;
+  }
+
+  @include mobile-large {
+    padding: 50px 30px;
+  }
+
+  // .about__pets
+  &__pets {
+  }
+}
+
+.shelter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 430px;
+  gap: 25px;
+
+  @include laptop-small {
+    margin-bottom: 80px;
+  }
+
+  @include mobile-large{
+    align-items: center;
+  }
+  // .shelter__title
+  &__title {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+
+    @include mobile-large {
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  // .shelter__subtitle
+  &__subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    max-width: 430px;
+    width: 100%;
+    font-family: 'Arial', serif;
+
+
+  }
+}
+
